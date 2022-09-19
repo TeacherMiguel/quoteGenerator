@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +14,15 @@ body{
     background: url(images_for_project/wallpaperbackground.jpg) no-repeat center center/ cover;
 }
 
-.container{
+.container {
     width: 550px;
     height: 450px;
     margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 40px;
 }
 
-.header{
+.header {
     font-size: 1.2rem;
     border: solid 2px rgb(98, 97, 97);
     background-color: black;
@@ -33,40 +35,79 @@ body{
 
 }
 
-.mainContent{
+.mainContent {
     width: 100%;
     height: 300px;
     background-color: aliceblue;
     border-radius: 15px;
-    padding: 40px 30px;
+    padding: 15px 30px 40px 30px;
     box-shadow: 0 0 10px;
     
 
 }
 
-.quote{
+.quote {
+    font-weight: bolder;
     font-size: 1.5rem;
     line-height: 1.5;
-
-}
-
-.person{
-    font-size: 1.6rem;
-    color: red;
-    text-transform: uppercase;
-    padding-top: 30px;
     
 }
 
-.buttonArea button{
+.mainContent:hover .quote {
+    transition: 1s ease 2s;
+}
+
+.person {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: red;
+    text-transform: uppercase;
+    padding-top: 30px;
+
+}
+
+
+
+.videogame {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+
+.character {
+    padding: 5px 5px;
+    width: 25%;
+    
+}
+
+.animate {
+    animation: slideInFromLeft 3s;
+}
+
+.buttonArea button {
     width: 30%;
     background-color: black;
     color: aliceblue;
     font-size: 1.3rem;
     margin-top: 10px;
-    
+
 }
 
-.buttonArea button:active{
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.buttonArea button:active {
     background-color: lightblue;
+}
+
+.animation{
+    animation: slideInFromLeft 3s;
 }
